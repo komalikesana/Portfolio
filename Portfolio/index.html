@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Komali Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Mea+Culpa&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="logo">Komali</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="data:image/jpeg;base64,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" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Komali Kesana</h2>
+        <p><span class="typed" data-typed-items="Designer, Developer, Programmer, Analyst"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between align-items-center gy-4">
+              <div class="col-lg-5" style="max-width: 37.5%;">
+                <img src="assets/img/self.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Komali Kesana</span></p>
+                <p><strong>Profile: </strong> <span>Fullstack Developer</span></p>
+                <p><strong>Email: </strong> <span>kesanakomali123@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>8247200057</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>C</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"><span>C++</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Python</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill"><span>Java</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I am a dedicated and innovative developer with a strong background in C++, Python, and web development. My experience spans across frontend and full-stack development, where I have worked on diverse projects, including student portfolio websites, car rental systems, and hostel management platforms. I have interned at EDUNET and Rinex, gaining hands-on experience in building responsive and interactive web applications using HTML, CSS, JavaScript, PHP, and React JS.
+              </p>
+              <p>
+                Beyond development, I am passionate about problem-solving and continuously hone my skills by tackling challenges on LeetCode. I am also enthusiastic about cybersecurity, having completed certifications in the field. My strategic thinking and analytical mindset are enhanced by my love for chess, while badminton keeps me active and energized. I also enjoy hackathons, where I collaborate with like-minded peers to develop innovative solutions under time constraints.
+              </p>
+              <p>
+                I am always eager to explore new technologies, take on challenges, and contribute to impactful projects that push the boundaries of my expertise.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+      <section id="resume" class="resume section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>For a detailed overview of my skills, experience, and projects, check out my resume</p>
+        </div><!-- End Section Title -->
+      
+        <div class="container">
+          <div class="row">
+            
+            <!-- Left Column (About & Education) -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">About</h3>
+              <div class="resume-item pb-0">
+                <h4>Komali Kesana</h4>
+                <p><em>Passionate Fullstack Developer with hands-on experience in web development, problem-solving, and building impactful projects. Seeking opportunities to contribute technical expertise and innovative solutions in a dynamic team environment.</em></p>
+                <ul>
+                  <li>Guntur, Andhra Pradesh, India</li>
+                  <li>Phone: +91 8247200057</li>
+                  <li>Email: <a href="mailto:kesanakomali123@gmail.com">kesanakomali123@gmail.com</a></li>
+                </ul>
+
+              </div><!-- End Resume Item -->
+      
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Technology</h4>
+                <h5>2022 - 2026 (Ongoing)</h5>
+                <p><em>SRM University AP, Andhra Pradesh</em></p>
+                <p>CGPA: 8.9</p>
+              </div><!-- End Resume Item -->
+      
+              <div class="resume-item">
+                <h4>Intermediate</h4>
+                <h5>2020 - 2022</h5>
+                <p><em>NRI Junior College</em></p>
+                <p>Percentage: 97.4%</p>
+              </div><!-- End Resume Item -->
+      
+              <div class="resume-item">
+                <h4>SSC</h4>
+                <h5>2020</h5>
+                <p><em>Geethanjali Vidyalayam</em></p>
+                <p>Percentage: 97%</p>
+              </div><!-- End Resume Item -->
+      
+              <h3 class="resume-title">Languages Known</h3>
+              <div class="resume-item">
+                <h4>Programming Languages</h4>
+                <p>C, C++, Python, Java</p>
+              </div>
+              <div class="resume-item">
+                <h4>Web Development</h4>
+                <p>HTML, CSS, JavaScript, PHP, React JS, Node Js, Express Js</p>
+              </div>
+              <div class="resume-item">
+                <h4>Database</h4>
+                <p>SQL, Mongodb</p>
+              </div>
+              <div class="resume-item">
+                <h4>Scripting</h4>
+                <p>Shell Script, R Script</p>
+              </div>
+      
+            </div><!-- End Left Column -->
+      
+            <!-- Right Column (Experience & Certifications) -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Internship Experience</h3>
+              <div class="resume-item">
+                <h4>Student Portfolio Website</h4>
+                <p><em>Frontend Development Intern, EDUNET</em></p>
+                <ul>
+                  <li>Developed a Student Portfolio Website showcasing skills, projects, educational background, and resume.</li>
+                  <li>Implemented a responsive design using <strong>HTML, CSS, and JavaScript</strong> to enhance user experience.</li>
+                </ul>
+              </div><!-- End Resume Item -->
+      
+              <div class="resume-item">
+                <h4>Car Rental System</h4>
+                <p><em>Web Development Intern, Rinex</em></p>
+                <ul>
+                  <li>Developed a responsive Car Rental System using <strong>HTML, CSS, and JavaScript</strong> to display available cars, pricing, and booking status.</li>
+                  <li>Implemented user functionalities for booking cars, managing personal details, and tracking rental history.</li>
+                  <li>Integrated a rating and review system to enhance user engagement and feedback.</li>
+                </ul>
+              </div>
+              <!-- End Resume Item -->
+      
+              <h3 class="resume-title">Certifications</h3>
+              <div class="resume-item">
+                <h4>Web Development</h4>
+                <h5>2023</h5>
+                <p><em>Rinex</em></p>
+              </div><!-- End Resume Item -->
+      
+              <div class="resume-item">
+                <h4>Python</h4>
+                <h5>2023</h5>
+                <p><em>NPTEL</em></p>              
+              </div><!-- End Resume Item -->
+      
+              <div class="resume-item">
+                <h4>Python Data Science basics</h4>
+                <h5>2024</h5>
+                <p><em>Udemy</em></p>
+              </div><!-- End Resume Item -->
+      
+              <div class="resume-item">
+                <h4>Cyber Security</h4>
+                <h5>2024</h5>
+                <p><em>Foundations of Cyber Security, Google</em></p>
+              </div><!-- End Resume Item -->
+      
+            </div><!-- End Right Column -->
+            
+          </div><!-- End Row -->
+        </div><!-- End Container -->
+      </section><!-- End Resume Section -->
+      
+
+    
+      <!-- Section Title -->
+        <!-- Services Section -->
+<!-- Portfolio Section -->
+<section id="projects" class="portfolio">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Projects</h2>
+    <p>Projects developed using different technologies.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-web">Web Development</li>
+        <li data-filter=".filter-cpp">C++</li>
+        <li data-filter=".filter-c">C</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- eLearning Platform (Web Development) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <img src="assets/img/Hostel_Management.jpg" class="img-fluid fixed-size" alt="Hostel Management System">
+          <div class="portfolio-info">
+            <h4>Hostel Management System</h4>
+            <p>Developed a Hostel Management System with room booking, availability tracking, menu management, and user ratings for an improved user experience.</p>
+            <a href="assets/img/Hostel_Management.jpg" title="Hostel Management System" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/komalikesana/Hostel_Management_System" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Finding Partners Platform (Web Development) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <img src="assets/img/Partners.jpg" class="img-fluid fixed-size" alt="Finding Partners Platform">
+          <div class="portfolio-info">
+            <h4>Finding Partners Platform</h4>
+            <p>Built a Hackathon Team Formation Platform featuring real-time chat, skill-based matchmaking, and user profiles to facilitate seamless team collaboration.</p>
+            <a href="assets/img/Partners.jpg" title="Finding Partners Platform" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/komalikesana/Finding-Partner" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Payroll Management System (C++) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cpp">
+          <img src="assets/img/Car.jpg" class="img-fluid fixed-size" alt="Car Rental System">
+          <div class="portfolio-info">
+            <h4>Car Rental System</h4>
+            <p>Developed a C++ OOP-based Car Rental System, enabling users to view available cars, book rentals, process payments, and handle fines, ensuring a seamless rental experience.</p>
+            <a href="assets/img/Car.jpg" title="Car Rental System" data-gallery="portfolio-gallery-cpp" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/komalikesana/Car_Rental_System" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Text Editor (C) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-c">
+          <img src="assets/img/Text_Editor.png" class="img-fluid fixed-size" alt="Text Editor">
+          <div class="portfolio-info">
+            <h4>Text Editor</h4>
+            <p>Text editor using data structures with copy, paste, undo, redo, write, and save functionalities.</p>
+            <a href="assets/img/Text_Editor.png" title="Text Editor" data-gallery="portfolio-gallery-c" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/komalikesana/TextEditor" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Landmark Detection (Python) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+          <img src="assets/img/netflix.jpg" class="img-fluid fixed-size" alt="Netflix Homepage">
+          <div class="portfolio-info">
+            <h4>Netflix Homepage</h4>
+            <p>Designed and structured a responsive Netflix-inspired webpage with a user-friendly interface, interactive elements, and seamless navigation.</p>
+            <a href="assets/img/netflix.jpg" title="Neflix Homepage" data-gallery="portfolio-gallery-python" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/komalikesana/Netflix" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+  </div>
+</section><!-- /Portfolio Section -->
+
+
+<!-- Coding Platform Profiles Section -->
+<section id="coding-profiles" class="coding-profiles section" style="background: white; padding: 60px 0;">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2 style="color: black;">Coding Profiles</h2>
+    <p style="color: black;">Check out my coding profiles across multiple competitive programming platforms.</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4 justify-content-center">
+
+      <!-- LeetCode Profile -->
+      <div class="col-lg-4 col-md-6">
+        <a href="https://leetcode.com/u/komali_kesana/" target="_blank" class="profile-link">
+          <div class="profile-card">
+            <img src="assets/img/leetcode.png" alt="LeetCode Logo" class="profile-logo">
+            <h4 class="profile-name">LeetCode</h4>
+          </div>
+        </a>
+      </div>
+
+      <!-- CodeChef Profile -->
+      <div class="col-lg-4 col-md-6">
+        <a href="https://www.codechef.com/users/komalikesana" target="_blank" class="profile-link">
+          <div class="profile-card">
+            <img src="assets/img/codechef.png" alt="CodeChef Logo" class="profile-logo">
+            <h4 class="profile-name">CodeChef</h4>
+          </div>
+        </a>
+      </div>
+
+      <!-- HackerRank Profile -->
+      <div class="col-lg-4 col-md-6">
+        <a href="https://www.hackerrank.com/AP22110011249" target="_blank" class="profile-link">
+          <div class="profile-card">
+            <img src="assets/img/hackerrank.png" alt="HackerRank Logo" class="profile-logo">
+            <h4 class="profile-name">HackerRank</h4>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Let's connect! Feel free to reach out for collaboration, opportunities, or discussions.</p>
+      </div>
+    
+      <div class="container contact-details" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          
+          <div class="col-lg-4">
+            <div class="info-item">
+              <img src="assets/img/loc.png" alt="Location">
+              <div>
+                <h3>Address</h3>
+                <p>Pedakakani, Guntur, Andhra Pradesh, India, 522509</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4">
+            <div class="info-item">
+              <img src="assets/img/phone.png" alt="Phone">
+              <div>
+                <h3>Phone</h3>
+                <p>+91 8247200057</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4">
+            <div class="info-item">
+              <img src="assets/img/email.png" alt="Email">
+              <div>
+                <h3>Email</h3>
+                <p>kesanakomali123@gmail.com</p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Komali</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/komalikesana"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/komalikesana/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
